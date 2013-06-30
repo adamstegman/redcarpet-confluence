@@ -1,0 +1,53 @@
+
+
+h1. Title
+
+Some paragraph of text.
+A new line of text.
+
+* here
+* are
+* some
+* bullets
+
+
+# and
+# numbered
+# list
+
+
+||Name||Value||
+|a|1|
+|b|2|
+
+Now let's get to _formatting_ this *text*. See how _*bold*_ I can get‽
+
+I can do math: x ^2^  \+ 3x \+ 2 = -(x \+ 3)- (x \+ 2)(x \+ 1)
+
+h2. Subheading
+
+{code:lang=ruby}puts "Some ruby code"
+{code}
+
+h3. Deeper subheading
+
+{code:lang=none}some _anonymous_ code
+{code}
+
+h4. Still going deeper
+
+{quote}
+
+quoted text _with_ *emphasis*{quote}
+
+h5. We must go deeper
+
+Text with a {{codespan}} in the middle.
+
+h6. Finally
+
+We're _*here*_
+
+----
+
+!http://www.nasa.gov/images/content/711375main_grail20121205_4x3_946-710.jpg|alt=GRAIL's \*gravity\* map of the moon|title=Note the \*pretty colors\*.! This is the first image that came up in [a Google search for "image"|http://www.google.com/images?q=image].

@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby -s
+
+# Converts the contents of the given file to Confluence syntax (or stdin) and prints the result to stdout.
+#
+# Automatically enables all the additional features provided by Redcarpet. Provide flags to disable features.
+#
+# Usage: md2conf [-noautolink] [-nofencedcode] [-intraemphasis] [-nostrikethrough] [-nosuperscript] [-notables] FILENAME
+#        md2conf -h
+
+require 'redcarpet/confluence'
+
+# == Helpers
+
+def usage
+  "Usage: #{$0} [-noautolink] [-nofencedcode] [-intraemphasis] [-nostrikethrough] [-nosuperscript] [-notables] FILENAME"
+end
+
+def markdown_text
+  if ARGV[0]
+    File.read(ARGV[0])
+  else
+    $stdin.read
+  end
+end
+
+# == Script
+
+if $h
+  $stderr.puts usage
+  exit 0
+end
+
+markdown_options = {
+  autolink: $noautolink.nil?,
+  fenced_code_blocks: $nofencedcode.nil?,
+  no_intra_emphasis: $intraemphasis.nil?,
+  strikethrough: $nostrikethrough.nil?,
+  superscript: $nosuperscript.nil?,
+  tables: $notables.nil?
+}
+
+renderer = Redcarpet::Markdown.new(Redcarpet::Confluence, markdown_options)
+$stdout.puts renderer.render(markdown_text)
