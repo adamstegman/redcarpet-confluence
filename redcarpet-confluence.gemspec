@@ -6,6 +6,7 @@ Gem::Specification.new do |gem|
   gem.summary       = 'A Redcarpet renderer to convert Markdown to Confluence syntax.'
   gem.description   = "#{gem.summary}"
   gem.homepage      = 'https://github.com/adamstegman/redcarpet-confluence'
+  gem.license       = "MIT"
 
   gem.executable    = 'md2conf'
   gem.files         = Dir['lib/**/*.rb', 'Gemfile', 'README.md', 'Rakefile', 'redcarpet-confluence.gemspec']
