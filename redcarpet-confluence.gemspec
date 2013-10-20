@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name          = 'redcarpet-confluence'
-  gem.version       = '1.0.0'
+  gem.version       = '1.0.1'
   gem.authors       = ['Adam Stegman']
   gem.email         = ['me@adamstegman.com']
   gem.summary       = 'A Redcarpet renderer to convert Markdown to Confluence syntax.'
