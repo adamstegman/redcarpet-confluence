@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name          = 'redcarpet-confluence'
-  gem.version       = '1.2.0'
+  gem.version       = '1.1.0'
   gem.authors       = ['Adam Stegman']
   gem.email         = ['me@adamstegman.com']
   gem.summary       = 'A Redcarpet renderer to convert Markdown to Confluence syntax.'
@@ -21,7 +21,7 @@ Gem::Specification.new do |gem|
                       ]
   gem.require_paths = ['lib']
 
-  gem.add_dependency             'redcarpet', '~> 3.4.0'
+  gem.add_dependency             'redcarpet', '~> 3.4'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
 end
